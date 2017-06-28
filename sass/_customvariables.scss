@@ -1,7 +1,7 @@
 /* Custom CSS*/
 
 /*Variables*/
-
+$our-grey: #F7F7F7;
 
 /*global*/
 .container {
@@ -25,22 +25,76 @@
   padding-bottom: 40%;
   background: url('../img/showcase.jpg') no-repeat center center;
   background-size: cover;
-}
 
-#showcase .container {
-  height: auto;
-}
+  .container {
+    height: auto;
+  }
+  .showcase-text {
+    margin-top:15%;
 
-.showcase-text {
-  margin-top:15%;
-
+  }
 }
 
 /*main*/
+#main {
+  padding-top: 40px;
+}
+
 .main-div{
   padding: 20px;
+  h2{
+    text-align:center
+  }
 }
 .main-img {
   height: 300px;
   width: 100%;
+}
+
+/*about*/
+#about {
+  height: auto;
+  background-color: $our-grey;
+  .container {
+    height: 30%;
+
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+
+  h2{
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 1.5em;
+  }
+  .about-img-div{
+    padding: 20px;
+    height:inherit;
+  }
+  #about-img{
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 3em;
+  }
+
+}
+
+
+@media only screen and (min-width : 300px){
+  .about-img-div {
+    display: none;
+  }
+
+  /* Medium Devices, Desktops */
+   @media only screen and (min-width : 992px){
+     .about-img-div {
+       display:flex;
+     }
+   }
+
 }

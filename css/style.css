@@ -18,21 +18,54 @@
   padding-bottom: 40%;
   background: url("../img/showcase.jpg") no-repeat center center;
   background-size: cover; }
-
-#showcase .container {
-  height: auto; }
-
-.showcase-text {
-  margin-top: 15%; }
+  #showcase .container {
+    height: auto; }
+  #showcase .showcase-text {
+    margin-top: 15%; }
 
 /*main*/
+#main {
+  padding-top: 40px; }
+
 .main-div {
   padding: 20px; }
+  .main-div h2 {
+    text-align: center; }
 
 .main-img {
   height: 300px;
   width: 100%; }
 
+/*about*/
+#about {
+  height: auto;
+  background-color: #F7F7F7; }
+  #about .container {
+    height: 30%; }
+  #about .row {
+    display: flex;
+    align-items: center; }
+  #about h2 {
+    font-size: 3em;
+    margin-bottom: 15px; }
+  #about p {
+    font-size: 1.5em; }
+  #about .about-img-div {
+    padding: 20px;
+    height: inherit; }
+  #about #about-img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3em; }
+
+@media only screen and (min-width: 300px) {
+  .about-img-div {
+    display: none; }
+
+  /* Medium Devices, Desktops */ }
+@media only screen and (min-width: 300px) and (min-width: 992px) {
+  .about-img-div {
+    display: flex; } }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
