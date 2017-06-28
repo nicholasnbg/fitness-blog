@@ -1,15 +1,37 @@
 @charset "UTF-8";
 /* Custom CSS*/
 /*Variables*/
+/*global*/
+.container {
+  width: 80% !important; }
+
+.navbar-default .container {
+  width: 80% !important; }
+
 /*Nav */
+.navbar {
+  margin-bottom: 0px !important; }
+
 /*Showcase */
 #showcase {
-  height: 400px;
+  height: 0;
+  padding-bottom: 40%;
   background: url("../img/showcase.jpg") no-repeat center center;
   background-size: cover; }
 
 #showcase .container {
   height: auto; }
+
+.showcase-text {
+  margin-top: 15%; }
+
+/*main*/
+.main-div {
+  padding: 20px; }
+
+.main-img {
+  height: 300px;
+  width: 100%; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -1165,7 +1187,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.3;
   color: inherit; }
   h1 small,
   h1 .small, h2 small,

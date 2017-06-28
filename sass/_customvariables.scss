@@ -3,17 +3,44 @@
 /*Variables*/
 
 
-/*Nav */
+/*global*/
+.container {
+  width: 80% !important;
+}
+.navbar-default .container {
+  width: 80% !important;
 
+}
+
+
+/*Nav */
+.navbar  {
+  margin-bottom: 0px !important;
+}
 
 
 /*Showcase */
 #showcase {
-  height: 400px;
+  height: 0;
+  padding-bottom: 40%;
   background: url('../img/showcase.jpg') no-repeat center center;
   background-size: cover;
 }
 
 #showcase .container {
   height: auto;
+}
+
+.showcase-text {
+  margin-top:15%;
+
+}
+
+/*main*/
+.main-div{
+  padding: 20px;
+}
+.main-img {
+  height: 300px;
+  width: 100%;
 }
